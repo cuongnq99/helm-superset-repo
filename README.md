@@ -36,8 +36,10 @@ Apache Superset is a modern, enterprise-ready business intelligence web applicat
 ## TL;DR
 
 ```console
-helm repo add superset http://apache.github.io/superset/
-helm install my-superset superset/superset
+kubectl create namespace superset
+helm repo add superset http://cuongnq99.github.io/helm-superset-repo
+helm repo update
+helm upgrade --install --values values.yaml superset superset/superset -n superset --timeout 15m --wait
 ```
 
 Make sure you set your own `SECRET_KEY` to something unique and secret. This secret key is used by Flask for
