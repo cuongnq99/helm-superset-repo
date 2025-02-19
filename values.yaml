@@ -192,7 +192,8 @@ image:
   tag: latest
   pullPolicy: IfNotPresent
 
-imagePullSecrets: []
+imagePullSecrets:
+  - name: dockerhub-secret
 
 initImage:
   repository: cuong147/intelli-superset
