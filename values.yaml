@@ -197,7 +197,7 @@ imagePullSecrets:
 
 initImage:
   repository: cuong147/intelli-superset
-  tag: latest
+  tag: dockerize
   pullPolicy: IfNotPresent
 
 service:
