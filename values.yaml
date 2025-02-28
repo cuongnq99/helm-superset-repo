@@ -190,7 +190,7 @@ extraConfigMountPath: "/app/configs"
 image:
   repository: cuong147/intelli-superset
   tag: latest
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 imagePullSecrets:
   - name: dockerhub-secret
@@ -198,7 +198,7 @@ imagePullSecrets:
 initImage:
   repository: cuong147/intelli-superset
   tag: dockerize
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 service:
   type: ClusterIP
