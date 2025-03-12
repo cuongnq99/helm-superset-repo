@@ -196,9 +196,9 @@ imagePullSecrets:
   - name: dockerhub-secret
 
 initImage:
-  repository: cuong147/intelli-superset
+  repository: apache/superset
   tag: dockerize
-  pullPolicy: Always
+  pullPolicy: IfNotPresent
 
 service:
   type: ClusterIP
