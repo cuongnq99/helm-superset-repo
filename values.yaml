@@ -813,7 +813,7 @@ postgresql:
     database: superset
 
   image:
-    tag: "14"
+    tag: "14.6.0-debian-11-r13"
 
   ## PostgreSQL Primary parameters
   primary:
